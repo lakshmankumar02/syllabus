@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Institute name is a well-known coaching institute in our city for high quality of education. Our team has a vast experience of building strong learning base to our hundreds of students who prepared for JEE-Advanced, JEE-Main, board exams, Competition Classes, NTSE etc.">
+    <meta name="keywords"
+        content="Coaching Website, Best Coaching, Best Coaching Centre, Coaching Centre in my area, Coaching Institution">
+    <title>BBIT Syllabus</title>
+
+    <!-- Bootstrap CSS -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"> -->
+
+    <!-- My CSS  -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:wght@300;400;700;900&family=Sacramento&family=Ubuntu&display=swap"
+        rel="stylesheet">
+
+    <!-- font awesome  -->
+    <script src="https://kit.fontawesome.com/2c751ad132.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap JS -->
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script> -->
+
+</head>
+
+<body>
+
+    <header>
+        <div class="college_box">
+            <div class="college_dropdown">
+                <label for="college">Choose Your College</label>
+                <select name="college" id="college" required>
+                    <option value="">--Select--</option>
+                    <option value="IIT">IIT Roorkee</option>
+                    <option value="BBIT" selected>Budge Budge Institute of Technology</option>
+                    <option value="RPSSIAT">Ramesh Prasad Singh Sharma Institute of Artificial Technology</option>
+                </select>
+            </div>
+            <div class="college_name">Your College Name is: <span id="selected_college"></span></div>
+        </div>
+
+        <nav class="navbar" id="navbar">
+            <a href="#" class="logo">
+                <img src="img/logo.jpg" alt="logo">
+            </a>
+            <div id="menu_icon" class="hamburger">
+                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-xmark"></i>
+                <!-- <i class='bx bx-menu ham'></i>
+                <i class='bx bx-x cross'></i> -->
+            </div>
+            <ul class="navlist">
+                <li><a href="#">Home</a></li>
+                <li id="branch" class="boom"><a href="#">Branch</a><i class="icons fa-solid fa-angle-down"></i>
+                    <ul class="branch_list" id="branch_list">
+                        <li class="item_1" id="civil"><a href="#">Civil</a><i class="icons fa-solid fa-angle-down"></i>
+                            <ul class="semester_list" id="semester_list_civil">
+                                <li class="item_2"><a href="#">1st Semester</a></li>
+                                <li class="item_2"><a href="#">2nd Semester</a></li>
+                                <li class="item_2"><a href="#">3rd Semester</a></li>
+                                <li class="item_2"><a href="#">4th Semester</a></li>
+                                <li class="item_2"><a href="#">5th Semester</a></li>
+                                <li class="item_2"><a href="#">6th Semester</a></li>
+                                <li class="item_2"><a href="#">7th Semester</a></li>
+                                <li class="item_2"><a href="#">8th Semester</a></li>
+                            </ul>
+                        </li>
+                        <li class="item_1" id="computer"><a href="#">Computer Science</a><i
+                                class="icons fa-solid fa-angle-down"></i>
+                            <ul class="semester_list" id="semester_list_computer">
+                                <li class="item_2"><a href="#">1st Semester</a></li>
+                                <li class="item_2"><a href="#">2nd Semester</a></li>
+                                <li class="item_2"><a href="#">3rd Semester</a></li>
+                                <li class="item_2"><a href="#">4th Semester</a></li>
+                                <li class="item_2"><a href="#">5th Semester</a></li>
+                                <li class="item_2"><a href="#">6th Semester</a></li>
+                                <li class="item_2"><a href="#">7th Semester</a></li>
+                                <li class="item_2"><a href="#">8th Semester</a></li>
+                            </ul>
+                        </li>
+                        <li class="item_1" id="electronics"><a href="#">Electronics</a><i
+                                class="icons fa-solid fa-angle-down"></i>
+                            <ul class="semester_list" id="semester_list_electronics">
+                                <li class="item_2"><a href="#">1st Semester</a></li>
+                                <li class="item_2"><a href="#">2nd Semester</a></li>
+                                <li class="item_2"><a href="#">3rd Semester</a></li>
+                                <li class="item_2"><a href="#">4th Semester</a></li>
+                                <li class="item_2"><a href="#">5th Semester</a></li>
+                                <li class="item_2"><a href="#">6th Semester</a></li>
+                                <li class="item_2"><a href="#">7th Semester</a></li>
+                                <li class="item_2"><a href="#">8th Semester</a></li>
+                            </ul>
+                        </li>
+                        <li class="item_1" id="mechanical"><a href="#">Mechanical</a><i
+                                class="icons fa-solid fa-angle-down"></i>
+                            <ul class="semester_list" id="semester_list_mechanical">
+                                <li class="item_2"><a href="#">1st Semester</a></li>
+                                <li class="item_2"><a href="#">2nd Semester</a></li>
+                                <li class="item_2"><a href="#">3rd Semester</a></li>
+                                <li class="item_2"><a href="#">4th Semester</a></li>
+                                <li class="item_2"><a href="#">5th Semester</a></li>
+                                <li class="item_2"><a href="#">6th Semester</a></li>
+                                <li class="item_2"><a href="#">7th Semester</a></li>
+                                <li class="item_2"><a href="#">8th Semester</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#">Syllabus</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <section class="home" id="home">
+        <div class="flex home_container">
+            <div class="home_data">
+                <h1 class="home_heading">Your Syllabus in your pocket.</h1>
+                <p class="home_para">Now you can access your syllabus from anywhere. It is just one click away from you.
+                    "Be prepared, Be Exam Ready."</p>
+            </div>
+            <div class="img_data">
+                <img src="img/Untitled design.png" alt="student">
+            </div>
+        </div>
+    </section>
+
+    <section class="branch_container" id="branch">
+        <div class="section_title">
+            <h2>Branch</h2>
+        </div>
+        <div class="branch_data flex">
+            <div class="branch_both">
+                <div class="flex branch_box civil" id="civil_box">
+                    <h2>Civil</h2>
+                </div>
+                <div class="branch_box_card container hidden" id="civil_card">
+                    <div class="section_title title_sm">
+                        <h2>Civil Branch</h2>
+                    </div>
+                    <div class="row flex">
+                        <div class="col_lg col_md bbd_column">
+                            <img src="img/asset 2.png" alt="1st sem">
+                            <div class="bbd_action flex">
+                                <div class="bbd_downloads bbd_mg flex">
+                                    <h3>Download</h3>
+                                    <span><i class="fa-solid fa-download"></i></span>
+                                </div>
+                                <div class="bbd_preview bbd_mg flex">
+                                    <h3>Preview</h3>
+                                    <span><i class="fa-solid fa-eye"></i></span>
+                                </div>
+                                <div class="bbd_share bbd_mg flex">
+                                    <h3>Share</h3>
+                                    <span><i class="fa-regular fa-share-from-square"></i></span>
+                                </div>
+                                <!-- <div class="main_box">
+                                    <input type="checkbox" id="share_button">
+                                    <label for="share_button">
+                                        <span class="sharebtn" >
+                                          <i class="far fa-share-square"></i>
+                                        </span>
+                                    </label>
+                              
+                                    <div class="sm_list">
+                                        <a href="#" class="facebook">
+                                          <i class="fab fa-facebook-f"></i>
+                                        </a>
+                                        <a href="#" class="instagram">
+                                          <i class="fab fa-instagram"></i>
+                                        </a>
+                                        <a href="#" class="linkedin">
+                                          <i class="fab fa-linkedin-in"></i>
+                                        </a>
+                                        <a href="#" class="whatsapp">
+                                          <i class="fab fa-whatsapp"></i>
+                                        </a>
+                                    </div>
+                                </div> -->
+                            </div>
+                            <div class="card_data">
+                                <h4><span><i class="fa-solid fa-circle-check"></i></span>Semester 1 Syllabus</h4>
+                                <h4><span><i class="fa-solid fa-circle-check"></i></span>All Topics Covered</h4>
+                                <h4><span><i class="fa-solid fa-circle-check"></i></span>Download It in pdf form</h4>
+                                <h4><span><i class="fa-solid fa-circle-check"></i></span>Preview Available</h4>
+                            </div>
+                        </div>
+
+                        <div class="col_lg col_md bbd_column">
+                            <img src="img/asset 2.png" alt="1st sem">
+                            <div class="bbd_action flex">
+                                <div class="bbd_downloads bbd_mg flex">
+                                    <h3>Download</h3>
+                                    <span><i class="fa-solid fa-download"></i></span>
+                                </div>
+                                <div class="bbd_preview bbd_mg flex">
+                                    <h3>Preview</h3>
+                                    <span><i class="fa-solid fa-eye"></i></span>
+                                </div>
+                                <div class="bbd_share bbd_mg flex">
+                                    <h3>Share</h3>
+                                    <span><i class="fa-regular fa-share-from-square"></i></span>
+                                </div>
+                            </div>
+                            <div class="card_data">
+                                <h4><span><i class="fa-solid fa-circle-check"></i></span>Semester 1 Syllabus</h4>
+                                <h4><span><i class="fa-solid fa-circle-check"></i></span>All Topics Covered</h4>
+                                <h4><span><i class="fa-solid fa-circle-check"></i></span>Download It in pdf form</h4>
+                                <h4><span><i class="fa-solid fa-circle-check"></i></span>Preview Available</h4>
+                            </div>
+                        </div>
+
+                        <div class="col_lg col_md bbd_column">
+                            <img src="img/asset 2.png" alt="1st sem">
+                            <div class="bbd_action flex">
+                                <div class="bbd_downloads bbd_mg flex">
+                                    <h3>Download</h3>
+                                    <span><i class="fa-solid fa-download"></i></span>
+                                </div>
+                                <div class="bbd_preview bbd_mg flex">
+                                    <h3>Preview</h3>
+                                    <span><i class="fa-solid fa-eye"></i></span>
+                                </div>
+                                <div class="bbd_share bbd_mg flex">
+                                    <h3>Share</h3>
+                                    <span><i class="fa-regular fa-share-from-square"></i></span>
+                                </div>
+                            </div>
+                            <div class="card_data">
+                                <h4><span><i class="fa-solid fa-circle-check"></i></span>Semester 1 Syllabus</h4>
+                                <h4><span><i class="fa-solid fa-circle-check"></i></span>All Topics Covered</h4>
+                                <h4><span><i class="fa-solid fa-circle-check"></i></span>Download It in pdf form</h4>
+                                <h4><span><i class="fa-solid fa-circle-check"></i></span>Preview Available</h4>
+                            </div>
+                        </div>
+
+                        <div class="col_lg col_md bbd_column">
+                            <img src="img/asset 2.png" alt="1st sem">
+                            <div class="bbd_action flex">
+                                <div class="bbd_downloads bbd_mg flex">
+                                    <h3>Download</h3>
+                                    <span><i class="fa-solid fa-download"></i></span>
+                                </div>
+                                <div class="bbd_preview bbd_mg flex">
+                                    <h3>Preview</h3>
+                                    <span><i class="fa-solid fa-eye"></i></span>
+                                </div>
+                                <div class="bbd_share bbd_mg flex">
+                                    <h3>Share</h3>
+                                    <span><i class="fa-regular fa-share-from-square"></i></span>
+                                </div>
+                            </div>
+                            <div class="card_data">
+                                <h4><span><i class="fa-solid fa-circle-check"></i></span>Semester 1 Syllabus</h4>
+                                <h4><span><i class="fa-solid fa-circle-check"></i></span>All Topics Covered</h4>
+                                <h4><span><i class="fa-solid fa-circle-check"></i></span>Download It in pdf form</h4>
+                                <h4><span><i class="fa-solid fa-circle-check"></i></span>Preview Available</h4>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="branch_both">
+                <div class="flex branch_box computer" id="computer_box">
+                    <h2>Computer</h2>
+                </div>
+                <div class="branch_box_card container hidden" id="computer_card">
+                    <div class="section_title title_sm">
+                        <h2>Computer Branch</h2>
+                    </div>
+                    <div class="row flex">
+                        <div class="col_lg col_md bbd_column">
+                            <img src="img/asset 2.png" alt="1st sem">
+                            <div class="bbd_action flex">
+                                <div class="bbd_downloads bbd_mg flex">
+                                    <h3>Download</h3>
+                                    <span><i class="fa-solid fa-download"></i></span>
+                                </div>
+                                <div class="bbd_preview bbd_mg flex">
+                                    <h3>Preview</h3>
+                                    <span><i class="fa-solid fa-eye"></i></span>
+                                </div>
+                                <div class="bbd_share bbd_mg flex">
+                                    <h3>Share</h3>
+                                    <span><i class="fa-regular fa-share-from-square"></i></span>
+                                </div>
+                            </div>
+                            <div class="card_data">
+                                <h4><span><i class="fa-solid fa-circle-check"></i></span>Semester 1 Syllabus</h4>
+                                <h4><span><i class="fa-solid fa-circle-check"></i></span>All Topics Covered</h4>
+                                <h4><span><i class="fa-solid fa-circle-check"></i></span>Download It in pdf form</h4>
+                                <h4><span><i class="fa-solid fa-circle-check"></i></span>Preview Available</h4>
+                            </div>
+                        </div>
+
+                        <div class="col_lg col_md bbd_column">
+                            <img src="img/asset 2.png" alt="1st sem">
+                            <div class="bbd_action flex">
+                                <div class="bbd_downloads bbd_mg flex">
+                                    <h3>Download</h3>
+                                    <span><i class="fa-solid fa-download"></i></span>
+                                </div>
+                                <div class="bbd_preview bbd_mg flex">
+                                    <h3>Preview</h3>
+                                    <span><i class="fa-solid fa-eye"></i></span>
+                                </div>
+                                <div class="bbd_share bbd_mg flex">
+                                    <h3>Share</h3>
+                                    <span><i class="fa-regular fa-share-from-square"></i></span>
+                                </div>
+                            </div>
+                            <div class="card_data">
+                                <h4><span><i class="fa-solid fa-circle-check"></i></span>Semester 1 Syllabus</h4>
+                                <h4><span><i class="fa-solid fa-circle-check"></i></span>All Topics Covered</h4>
+                                <h4><span><i class="fa-solid fa-circle-check"></i></span>Download It in pdf form</h4>
+                                <h4><span><i class="fa-solid fa-circle-check"></i></span>Preview Available</h4>
+                            </div>
+                        </div>
+
+                        <div class="col_lg col_md bbd_column">
+                            <img src="img/asset 2.png" alt="1st sem">
+                            <div class="bbd_action flex">
+                                <div class="bbd_downloads bbd_mg flex">
+                                    <h3>Download</h3>
+                                    <span><i class="fa-solid fa-download"></i></span>
+                                </div>
+                                <div class="bbd_preview bbd_mg flex">
+                                    <h3>Preview</h3>
+                                    <span><i class="fa-solid fa-eye"></i></span>
+                                </div>
+                                <div class="bbd_share bbd_mg flex">
+                                    <h3>Share</h3>
+                                    <span><i class="fa-regular fa-share-from-square"></i></span>
+                                </div>
+                            </div>
+                            <div class="card_data">
+                                <h4><span><i class="fa-solid fa-circle-check"></i></span>Semester 1 Syllabus</h4>
+                                <h4><span><i class="fa-solid fa-circle-check"></i></span>All Topics Covered</h4>
+                                <h4><span><i class="fa-solid fa-circle-check"></i></span>Download It in pdf form</h4>
+                                <h4><span><i class="fa-solid fa-circle-check"></i></span>Preview Available</h4>
+                            </div>
+                        </div>
+
+                        <div class="col_lg col_md bbd_column">
+                            <img src="img/asset 2.png" alt="1st sem">
+                            <div class="bbd_action flex">
+                                <div class="bbd_downloads bbd_mg flex">
+                                    <h3>Download</h3>
+                                    <span><i class="fa-solid fa-download"></i></span>
+                                </div>
+                                <div class="bbd_preview bbd_mg flex">
+                                    <h3>Preview</h3>
+                                    <span><i class="fa-solid fa-eye"></i></span>
+                                </div>
+                                <div class="bbd_share bbd_mg flex">
+                                    <h3>Share</h3>
+                                    <span><i class="fa-regular fa-share-from-square"></i></span>
+                                </div>
+                            </div>
+                            <div class="card_data">
+                                <h4><span><i class="fa-solid fa-circle-check"></i></span>Semester 1 Syllabus</h4>
+                                <h4><span><i class="fa-solid fa-circle-check"></i></span>All Topics Covered</h4>
+                                <h4><span><i class="fa-solid fa-circle-check"></i></span>Download It in pdf form</h4>
+                                <h4><span><i class="fa-solid fa-circle-check"></i></span>Preview Available</h4>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="branch_both">
+                <div class="flex branch_box electronics" id="electronics_box">
+                    <h2>Electronics</h2>
+                </div>
+                <div class="branch_box_card container hidden" id="electronics_card">
+                    <div class="section_title title_sm">
+                        <h2>Electronics & Communication Branch</h2>
+                    </div>
+                    <div class="row flex">
+                        <div class="col_lg col_md bbd_column">
+                            <img src="img/asset 2.png" alt="1st sem">
+                            <div class="bbd_action flex">
+                                <div class="bbd_downloads bbd_mg flex">
+                                    <h3>Download</h3>
+                                    <span><i class="fa-solid fa-download"></i></span>
+                                </div>
+                                <div class="bbd_preview bbd_mg flex">
+                                    <h3>Preview</h3>
+                                    <span><i class="fa-solid fa-eye"></i></span>
+                                </div>
+                                <div class="bbd_share bbd_mg flex">
+                                    <h3>Share</h3>
+                                    <span><i class="fa-regular fa-share-from-square"></i></span>
+                                </div>
+                            </div>
+                            <div class="card_data">
+                                <h4><span><i class="fa-solid fa-circle-check"></i></span>Semester 1 Syllabus</h4>
+                                <h4><span><i class="fa-solid fa-circle-check"></i></span>All Topics Covered</h4>
+                                <h4><span><i class="fa-solid fa-circle-check"></i></span>Download It in pdf form</h4>
+                                <h4><span><i class="fa-solid fa-circle-check"></i></span>Preview Available</h4>
+                            </div>
+                        </div>
+
+                        <div class="col_lg col_md bbd_column">
+                            <img src="img/asset 2.png" alt="1st sem">
+                            <div class="bbd_action flex">
+                                <div class="bbd_downloads bbd_mg flex">
+                                    <h3>Download</h3>
+                                    <span><i class="fa-solid fa-download"></i></span>
+                                </div>
+                                <div class="bbd_preview bbd_mg flex">
+                                    <h3>Preview</h3>
+                                    <span><i class="fa-solid fa-eye"></i></span>
+                                </div>
+                                <div class="bbd_share bbd_mg flex">
+                                    <h3>Share</h3>
+                                    <span><i class="fa-regular fa-share-from-square"></i></span>
+                                </div>
+                            </div>
+                            <div class="card_data">
+                                <h4><span><i class="fa-solid fa-circle-check"></i></span>Semester 1 Syllabus</h4>
+                                <h4><span><i class="fa-solid fa-circle-check"></i></span>All Topics Covered</h4>
+                                <h4><span><i class="fa-solid fa-circle-check"></i></span>Download It in pdf form</h4>
+                                <h4><span><i class="fa-solid fa-circle-check"></i></span>Preview Available</h4>
+                            </div>
+                        </div>
+
+                        <div class="col_lg col_md bbd_column">
+                            <img src="img/asset 2.png" alt="1st sem">
+                            <div class="bbd_action flex">
+                                <div class="bbd_downloads bbd_mg flex">
+                                    <h3>Download</h3>
+                                    <span><i class="fa-solid fa-download"></i></span>
+                                </div>
+                                <div class="bbd_preview bbd_mg flex">
+                                    <h3>Preview</h3>
+                                    <span><i class="fa-solid fa-eye"></i></span>
+                                </div>
+                                <div class="bbd_share bbd_mg flex">
+                                    <h3>Share</h3>
+                                    <span><i class="fa-regular fa-share-from-square"></i></span>
+                                </div>
+                            </div>
+                            <div class="card_data">
+                                <h4><span><i class="fa-solid fa-circle-check"></i></span>Semester 1 Syllabus</h4>
+                                <h4><span><i class="fa-solid fa-circle-check"></i></span>All Topics Covered</h4>
+                                <h4><span><i class="fa-solid fa-circle-check"></i></span>Download It in pdf form</h4>
+                                <h4><span><i class="fa-solid fa-circle-check"></i></span>Preview Available</h4>
+                            </div>
+                        </div>
+
+                        <div class="col_lg col_md bbd_column">
+                            <img src="img/asset 2.png" alt="1st sem">
+                            <div class="bbd_action flex">
+                                <div class="bbd_downloads bbd_mg flex">
+                                    <h3>Download</h3>
+                                    <span><i class="fa-solid fa-download"></i></span>
+                                </div>
+                                <div class="bbd_preview bbd_mg flex">
+                                    <h3>Preview</h3>
+                                    <span><i class="fa-solid fa-eye"></i></span>
+                                </div>
+                                <div class="bbd_share bbd_mg flex">
+                                    <h3>Share</h3>
+                                    <span><i class="fa-regular fa-share-from-square"></i></span>
+                                </div>
+                            </div>
+                            <div class="card_data">
+                                <h4><span><i class="fa-solid fa-circle-check"></i></span>Semester 1 Syllabus</h4>
+                                <h4><span><i class="fa-solid fa-circle-check"></i></span>All Topics Covered</h4>
+                                <h4><span><i class="fa-solid fa-circle-check"></i></span>Download It in pdf form</h4>
+                                <h4><span><i class="fa-solid fa-circle-check"></i></span>Preview Available</h4>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="branch_both">
+                <div class="flex branch_box mechanical" id="mechanical_box">
+                    <h2>Mechanical</h2>
+                </div>
+                <div class="branch_box_card container hidden" id="mechanical_card">
+                    <div class="section_title title_sm">
+                        <h2>Mechanical Branch</h2>
+                    </div>
+                    <div class="row flex">
+                        <div class="col_lg col_md bbd_column">
+                            <img src="img/asset 2.png" alt="1st sem">
+                            <div class="bbd_action flex">
+                                <div class="bbd_downloads bbd_mg flex">
+                                    <h3>Download</h3>
+                                    <span><i class="fa-solid fa-download"></i></span>
+                                </div>
+                                <div class="bbd_preview bbd_mg flex">
+                                    <h3>Preview</h3>
+                                    <span><i class="fa-solid fa-eye"></i></span>
+                                </div>
+                                <div class="bbd_share bbd_mg flex">
+                                    <h3>Share</h3>
+                                    <span><i class="fa-regular fa-share-from-square"></i></span>
+                                </div>
+                            </div>
+                            <div class="card_data">
+                                <h4><span><i class="fa-solid fa-circle-check"></i></span>Semester 1 Syllabus</h4>
+                                <h4><span><i class="fa-solid fa-circle-check"></i></span>All Topics Covered</h4>
+                                <h4><span><i class="fa-solid fa-circle-check"></i></span>Download It in pdf form</h4>
+                                <h4><span><i class="fa-solid fa-circle-check"></i></span>Preview Available</h4>
+                            </div>
+                        </div>
+
+                        <div class="col_lg col_md bbd_column">
+                            <img src="img/asset 2.png" alt="1st sem">
+                            <div class="bbd_action flex">
+                                <div class="bbd_downloads bbd_mg flex">
+                                    <h3>Download</h3>
+                                    <span><i class="fa-solid fa-download"></i></span>
+                                </div>
+                                <div class="bbd_preview bbd_mg flex">
+                                    <h3>Preview</h3>
+                                    <span><i class="fa-solid fa-eye"></i></span>
+                                </div>
+                                <div class="bbd_share bbd_mg flex">
+                                    <h3>Share</h3>
+                                    <span><i class="fa-regular fa-share-from-square"></i></span>
+                                </div>
+                            </div>
+                            <div class="card_data">
+                                <h4><span><i class="fa-solid fa-circle-check"></i></span>Semester 1 Syllabus</h4>
+                                <h4><span><i class="fa-solid fa-circle-check"></i></span>All Topics Covered</h4>
+                                <h4><span><i class="fa-solid fa-circle-check"></i></span>Download It in pdf form</h4>
+                                <h4><span><i class="fa-solid fa-circle-check"></i></span>Preview Available</h4>
+                            </div>
+                        </div>
+
+                        <div class="col_lg col_md bbd_column">
+                            <img src="img/asset 2.png" alt="1st sem">
+                            <div class="bbd_action flex">
+                                <div class="bbd_downloads bbd_mg flex">
+                                    <h3>Download</h3>
+                                    <span><i class="fa-solid fa-download"></i></span>
+                                </div>
+                                <div class="bbd_preview bbd_mg flex">
+                                    <h3>Preview</h3>
+                                    <span><i class="fa-solid fa-eye"></i></span>
+                                </div>
+                                <div class="bbd_share bbd_mg flex">
+                                    <h3>Share</h3>
+                                    <span><i class="fa-regular fa-share-from-square"></i></span>
+                                </div>
+                            </div>
+                            <div class="card_data">
+                                <h4><span><i class="fa-solid fa-circle-check"></i></span>Semester 1 Syllabus</h4>
+                                <h4><span><i class="fa-solid fa-circle-check"></i></span>All Topics Covered</h4>
+                                <h4><span><i class="fa-solid fa-circle-check"></i></span>Download It in pdf form</h4>
+                                <h4><span><i class="fa-solid fa-circle-check"></i></span>Preview Available</h4>
+                            </div>
+                        </div>
+
+                        <div class="col_lg col_md bbd_column">
+                            <img src="img/asset 2.png" alt="1st sem">
+                            <div class="bbd_action flex">
+                                <div class="bbd_downloads bbd_mg flex">
+                                    <h3>Download</h3>
+                                    <span><i class="fa-solid fa-download"></i></span>
+                                </div>
+                                <div class="bbd_preview bbd_mg flex">
+                                    <h3>Preview</h3>
+                                    <span><i class="fa-solid fa-eye"></i></span>
+                                </div>
+                                <div class="bbd_share bbd_mg flex">
+                                    <h3>Share</h3>
+                                    <span><i class="fa-regular fa-share-from-square"></i></span>
+                                </div>
+                            </div>
+                            <div class="card_data">
+                                <h4><span><i class="fa-solid fa-circle-check"></i></span>Semester 1 Syllabus</h4>
+                                <h4><span><i class="fa-solid fa-circle-check"></i></span>All Topics Covered</h4>
+                                <h4><span><i class="fa-solid fa-circle-check"></i></span>Download It in pdf form</h4>
+                                <h4><span><i class="fa-solid fa-circle-check"></i></span>Preview Available</h4>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="syllabus_container" id="syllabus">
+
+    </div>
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

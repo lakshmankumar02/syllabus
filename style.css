@@ -1,0 +1,533 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+
+:root {
+    --bg-color: #ffffff;
+    --text-color: #000;
+    --second-color: #a09dab;
+    --main-color: #2595f0;
+    --primary-color: #44bd44;
+    --primary-text-color: #183b56;
+    --secondary-text-color: #577592;
+}
+
+span {
+    color: var(--main-color);
+}
+
+a {
+    text-decoration: none;
+}
+
+.flex {
+    display: flex;
+}
+
+.sticky {
+    position: fixed !important;
+    top: 0;
+    width: 100%;
+}
+
+.container{
+    /* max-width: 1400px; */
+    width: 100%;
+    padding: 2% 6%;
+}
+
+/* college name  */
+
+.college_box {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 3% 4%;
+}
+
+.college_dropdown {
+    width: 40%;
+}
+
+.college_dropdown label {
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
+.college_dropdown select {
+    width: 45%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3rem;
+}
+
+.college_name {
+    font-size: 1.5rem;
+    width: 40%;
+}
+
+/* navbar ka position fixed rakhna hai baad me javascript se sticky kar dena hai 18:04 video se  */
+.navbar {
+    position: sticky;
+    width: 100%;
+    top: 0px;
+    right: 0px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background: var(--bg-color);
+    padding: 7px 10%;
+    box-shadow: 0px 0px 10px rgb(0 0 0 / 10%);
+}
+
+.logo {
+    height: 65px;
+    position: relative;
+    width: 70px;
+}
+
+.logo img {
+    border-radius: 50%;
+    height: 100%;
+    ;
+    width: 100%;
+}
+
+#menu_icon {
+    color: var(--text-color);
+    cursor: pointer;
+    display: none;
+    font-size: 35px;
+}
+
+.navlist {
+    margin-right: 40px;
+    position: relative;
+}
+
+.navlist li {
+    display: inline-block;
+    padding: 5px;
+    position: relative;
+}
+
+.navlist li a {
+    font-size: 1.3rem;
+    color: var(--text-color);
+    font-weight: 500;
+    padding: 12px 27px;
+}
+
+.branch_list{
+    padding-bottom: 10px;
+}
+
+.branch_list li a {
+    font-size: 1.1rem;
+}
+
+.semester_list li a {
+    font-size: 1rem;
+}
+
+.navlist>li>a::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: var(--main-color);
+    bottom: -3px;
+    left: 0;
+    transition: ease .40s;
+}
+
+.navlist>li>a:hover::after {
+    width: 100%;
+}
+
+
+.navlist ul {
+    position: absolute;
+    top: 47px;
+    display: none;
+    transition: 0.3s ease-in-out;
+    background-color: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    box-shadow: 5px 4px 7px grey, -4px 2px 7px grey, 0px 4px 4px grey;
+    width: 240px;
+}
+
+.navlist li:hover>ul {
+    display: block;
+}
+
+.navlist ul li {
+    position: relative;
+    height: 35px;
+    width: 100%;
+    display: list-item;
+    cursor: pointer;
+}
+
+.navlist ul li:hover {
+    background-color: rgb(44, 44, 150);
+}
+
+.navlist ul li:hover>a {
+    color: white;
+}
+
+.navlist ul ul {
+    box-shadow: 5px 4px 7px grey;
+    position: absolute;
+    left: 238px;
+    top: -1px;
+}
+
+.navlist ul ul li {
+    position: relative;
+}
+
+.icons {
+    margin-right: 5px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    padding: 12px 0;
+    transition: ease .40s;
+}
+
+li:hover>.icons {
+    transform: rotate(180deg);
+}
+
+.branch_list li:hover>.icons {
+    transform: rotate(270deg);
+    color: white;
+}
+
+/* span i {
+    transform: rotate(8deg);
+} */
+
+.top-carousel {
+    height: 680px;
+}
+
+.section_cl {
+    padding: 50px 13% 20px 13%;
+}
+
+.my-info {
+    position: absolute;
+    top: 250px;
+    left: 17%;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.my-info h5 {
+    color: #ffffff;
+    font-size: 55px;
+    font-weight: 700;
+}
+
+.my-info p {
+    color: #ffffff;
+    font-size: 45px;
+    font-weight: 500;
+}
+
+.button-icon {
+    background-color: #000000;
+    border-radius: 50%;
+    color: #ffff;
+    font-weight: bold;
+    width: 4rem;
+}
+
+/* HOME  */
+
+.home {
+    padding: 10% 8% 5%;
+}
+
+.home_container {
+    align-items: center;
+    justify-content: center;
+}
+
+.home_heading {
+    color: #183b56;
+    font-size: 3rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.home_para {
+    color: var(--secondary-text-color);
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+}
+
+.img_data {
+    width: 100%;
+}
+
+.img_data img {
+    width: 100%;
+}
+
+.branch_data {
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+.branch_container {
+    padding: 8% 5%;
+}
+
+.section_title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.section_title h2 {
+    font-size: 2rem;
+    border-bottom: 2px solid blue;
+}
+
+.branch_data .branch_box {
+    height: 170px;
+    width: 270px;
+    align-items: center;
+    justify-content: center;
+    /* background-color: blue; */
+    background: linear-gradient(135deg, #f403d1, #64b5f6);
+    color: white;
+    cursor: pointer;
+}
+
+.branch_box_card{
+    position: absolute;
+    top: 240px;
+    left: 0px;
+    color: black;
+}
+
+.hidden{
+    display: none;
+}
+
+.title_sm h2{
+    font-size: 1.8rem;
+}
+
+.branch_box_card img{
+    width: 250px;
+    height: 150px;
+    margin-bottom: 10px;
+}
+
+.row{
+    align-items: center;
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
+    max-width: 100%;
+}
+
+.branch_data .bbd_column{
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid black; */
+    padding: 10px;
+    margin: 1% 1% 2%;
+    border-radius: 10px;
+    box-shadow: 3px 6px 6px rgb(185, 182, 182), -3px 6px 6px rgb(185, 182, 182);    
+
+}
+
+.col_lg{
+    width: 31%;
+}
+
+/* .col_md{
+    width: 50%;
+} */
+
+.bbd_column .bbd_action{
+    margin: 10px 5px 0;
+}
+
+.bbd_column .card_data{
+    margin: 10px 0 0 10px;
+}
+
+.bbd_column .bbd_mg{
+    cursor: pointer;
+    margin: 10px;
+}
+
+.bbd_column span{
+    margin-left: 4px;
+    color: black;
+    font-size: 1rem;
+}
+
+.card_data span{
+    margin-right: 10px;
+}
+
+.card_data h4{
+    font-size: 1.3rem;
+    margin: 15px 5px;
+    letter-spacing: 0.7px;
+    font-weight: 400;
+    color: #655c7c;
+}
+
+
+/* share  */
+
+.main_box{
+    width: 4em;
+    height: 4em;
+    position: relative;
+}
+  
+#share_button{
+    display: none;
+}
+  
+.main_box span, .sm_list a{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+  
+.main_box span{
+    width: 4em;
+    height: 4em;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #eee;
+    color: #333;
+    font-size: 2em;
+    z-index: 1;
+    cursor: pointer;
+    /* border-radius: 30%; */
+}
+  
+.sm_list{
+    width: 4em;
+    height: 4em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+  
+.sm_list a{
+    width: 4em;
+    height: 4em;
+    border-radius: 50%;
+    text-decoration: none;
+    color: #fff;
+    transition: all .3s;
+    font-size: 1.5em;
+}
+  
+#share_button:checked ~ .sm_list a:nth-child(1){
+    background-color: #3B5998;
+    transition-delay: 0.2s;
+    transform: translateX(-6em);
+}
+  
+#share_button:checked ~ .sm_list a:nth-child(2){
+    background-color: #dd2553;
+    transition-delay: 0.2s;
+    transform: translateX(6em);
+}
+  
+#share_button:checked ~ .sm_list a:nth-child(3){
+    background-color: #000f94;
+    transition-delay: 0.3s;
+    transform: translateX(12em);
+}
+  
+#share_button:checked ~ .sm_list a:nth-child(4){
+    background-color: #1077ec;
+    transition-delay: 0.3s;
+    transform: translateX(-12em);
+}
+  
+#share_button:checked ~ .sm_list a:nth-child(5){
+    background-color: rgb(10, 63, 0);
+    transition-delay: 0.4s;
+    transform: translateX(18em);
+}
+  
+#share_button:checked ~ .sm_list a:nth-child(6){
+    background: linear-gradient(70deg,blue,green,red,yellow);
+    transition-delay: 0.4s;
+    transform: translateX(-18em);
+}
+  
+/* Hovering Effects */
+#share_button:checked ~ .sm_list a:nth-child(1):hover{
+    background-color: #ffffff;
+    color: #3B5998;
+    /* transition-delay: 0.2s;
+    transform: translateX(-6em); */
+}
+  
+#share_button:checked ~ .sm_list a:nth-child(2):hover{
+    color: #dd2553;
+    background-color: #fff;
+}
+  
+#share_button:checked ~ .sm_list a:nth-child(3):hover{
+    color: #000f94;
+    background-color: #fff;
+}
+  
+#share_button:checked ~ .sm_list a:nth-child(4):hover{
+    color: #1077ec;
+    background-color: #fff;
+}
+  
+#share_button:checked ~ .sm_list a:nth-child(5):hover{
+    color: rgb(10, 63, 0);
+    background-color: #fff;
+}
+  
+#share_button:checked ~ .sm_list a:nth-child(6):hover{
+    color: black;
+    background-image: linear-gradient(90deg,white,grey);
+}
+  
+.main_box span:visited{
+    background-color: #000f94;
+}
+
